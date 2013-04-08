@@ -1,0 +1,61 @@
+[
+  {
+    "id": "testing-for-login-page",
+    "description": "",
+    "name": "Testing for login page",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "testing-for-login-page;successful-login",
+        "description": "",
+        "name": "Successful login",
+        "keyword": "Scenario",
+        "line": 3,
+        "steps": [
+          {
+            "name": "I want to use the browser",
+            "keyword": "Given ",
+            "line": 4
+          },
+          {
+            "name": "I type testuser1 in the username input field",
+            "keyword": "When ",
+            "line": 5
+          },
+          {
+            "name": "I type testuser1 in the password input field",
+            "keyword": "When ",
+            "line": 6
+          },
+          {
+            "name": "I click the login button",
+            "keyword": "And ",
+            "line": 7
+          },
+          {
+            "result": {
+              "duration": 807745921,
+              "status": "failed",
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Login or register]\u003e but was:\u003c[My Account]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:125)\r\n\tat org.junit.Assert.assertEquals(Assert.java:147)\r\n\tat tests.StepDefinitions.I_am_on_the_login_page(StepDefinitions.java:67)\r\n\tat ✽.Then I am on the login page(tests\\bhf.feature:8)\r\n"
+            },
+            "name": "I am on the login page",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "val": "login",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.I_am_on_the_login_page(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "tests\\bhf.feature"
+  }
+]
